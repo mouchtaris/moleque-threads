@@ -14,9 +14,9 @@ public class ThreadControl
         ThreadMult thr3 = new ThreadMult(2,2,1, sem2, sem3);
         ThreadDiv thr4 = new ThreadDiv(6, 2, sem3);
 
-        thr1.start();
-        thr2.start();
-        thr3.start();
         thr4.start();
+        thr3.start();
+        thr2.start();
+        thr1.start();
     }
 }
