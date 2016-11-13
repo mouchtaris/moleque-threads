@@ -1,4 +1,4 @@
-package moleque
+package moleque;
 
 public class ThreadAdd extends Thread
 {
