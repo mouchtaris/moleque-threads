@@ -1,4 +1,4 @@
-package moleque
+package moleque;
 
 public class ThreadDiv extends Thread{
     private int num1, num2;
