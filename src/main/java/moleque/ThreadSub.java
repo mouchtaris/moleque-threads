@@ -17,8 +17,13 @@ public class ThreadSub extends Thread
 
     public void run()
     {
-        backward.acquire();
-        System.out.println("Sub =" + (num1 - num2));
-        forward.release();
+        try {
+            backward.acquire();
+            System.out.println("Sub =" + (num1 - num2));
+            forward.release();
+        }
+        catch (InterruptedException ex) {
+            System.err.println("Subtraction interrupted");
+        }
     }
 }
